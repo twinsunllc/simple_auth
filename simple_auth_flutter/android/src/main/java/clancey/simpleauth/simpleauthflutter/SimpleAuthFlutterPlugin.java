@@ -129,15 +129,7 @@ public class SimpleAuthFlutterPlugin implements FlutterPlugin, ActivityAware,Met
     _eventSink = null;
   }
 
-  /**
-   * Plugin registration.
-   */
 
-  @SuppressWarnings("deprecation")
-  public static void registerWith(io.flutter.plugin.common.PluginRegistry.Registrar registrar) {
-    final SimpleAuthFlutterPlugin instance = new SimpleAuthFlutterPlugin();
-    instance.onAttachedToEngine(registrar.context(), registrar.messenger());
-  }
 
   @Override
   public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
